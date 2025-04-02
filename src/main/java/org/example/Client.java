@@ -14,27 +14,23 @@ public class Client {
             System.out.println("2. Doi duong thanh am");
 
             int check = scanner.nextInt();
+
             Date date;
 
+            System.out.printf("vui long nhap ngay: ");
+            int day = scanner.nextInt();
+            System.out.printf("vui long nhap thang: ");
+            int month = scanner.nextInt();
+            System.out.printf("vui long nhap nam: ");
+            int year = scanner.nextInt();
+
             if (check == 1) {
-                System.out.printf("vui long nhap ngay: ");
-                int day = scanner.nextInt();
-                System.out.printf("vui long nhap thang: ");
-                int month = scanner.nextInt();
-                System.out.printf("vui long nhap nam: ");
-                int year = scanner.nextInt();
                 System.out.println("Co phai nam nhuan ko: ");
                 System.out.println("1. Co: true");
                 System.out.println("2. Khong: false");
                 boolean isleap = scanner.nextBoolean();
                 date = new Lunar(isleap, day, month, year);
             } else {
-                System.out.printf("vui long nhap ngay: ");
-                int day = scanner.nextInt();
-                System.out.printf("vui long nhap thang: ");
-                int month = scanner.nextInt();
-                System.out.printf("vui long nhap nam: ");
-                int year = scanner.nextInt();
                 date = new Solar(day, month, year);
             }
 

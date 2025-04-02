@@ -14,13 +14,6 @@ class Lunar extends Date implements Serializable {
         this.year = lunarYear;
     }
 
-    public Lunar( int lunarDay, int lunarMonth, int lunarYear) {
-        super();
-        this.day = lunarDay;
-        this.month = lunarMonth;
-        this.year = lunarYear;
-    }
-
     public Lunar() {
         super();
     }
